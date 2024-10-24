@@ -17,17 +17,13 @@
       environment.systemPackages =
         [ 
 	  pkgs.coreutils
-	  pkgs.discord
-	  pkgs.emacs
 	  pkgs.fd
 	  pkgs.git
 	  pkgs.kitty
 	  pkgs.lazygit
 	  pkgs.mkalias
 	  pkgs.neovim
-	  pkgs.obsidian
 	  pkgs.ripgrep
-	  pkgs.vscode
 	  pkgs.wezterm
 	  pkgs.zoxide
         ];
@@ -40,6 +36,10 @@
 	casks = [
 	  "android-studio"
 	  "arc"
+	  "cursor"
+	  "discord"
+	  "obsidian"
+	  "visual-studio-code"
 	];
 	masApps = {
           "UTM" = 1538878817;
