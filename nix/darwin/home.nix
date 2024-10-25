@@ -1,10 +1,18 @@
 { config, pkgs, lib, ... }:
-
+let
+  inherit (config.lib.file) mkOutOfStoreSymlink;
+in
 {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "josh";
   home.homeDirectory = "/Users/josh";
+
+  xdg.enable = true;
+
+  programs = {
+    oh-my-posh = import ../home/oh-my-posh.nix {inherit pkgs;};
+  };
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
