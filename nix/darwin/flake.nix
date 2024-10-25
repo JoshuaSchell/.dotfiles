@@ -24,15 +24,17 @@
 	  pkgs.mkalias
 	  pkgs.neovim
 	  pkgs.ripgrep
-	  pkgs.wezterm
 	  pkgs.zoxide
         ];
 
+      users.users.josh = {
+        name = "josh";
+	home = "/Users/josh";
+      };
+
       homebrew = {
         enable = true;
-	brews = [
-	  "mas"
-	];
+	brews = [];
 	casks = [
 	  "android-studio"
 	  "arc"
@@ -41,6 +43,7 @@
 	  "figma"
 	  "obsidian"
 	  "visual-studio-code"
+	  "wezterm"
 	];
 	masApps = {
           "UTM" = 1538878817;
@@ -53,26 +56,6 @@
       fonts.packages = [
         (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
       ];
-
-      system.activationScripts.applications.text = let
-        env = pkgs.buildEnv {
-          name = "system-applications";
-          paths = config.environment.systemPackages;
-          pathsToLink = "/Applications";
-        };
-      in
-        pkgs.lib.mkForce ''
-          # Set up applications.
-          echo "setting up /Applications..." >&2
-          rm -rf /Applications/Nix\ Apps
-          mkdir -p /Applications/Nix\ Apps
-          find ${env}/Applications -maxdepth 1 -type l -exec readlink '{}' + |
-          while read src; do
-            app_name=$(basename "$src")
-            echo "copying $src" >&2
-            ${pkgs.mkalias}/bin/mkalias "$src" "/Applications/Nix Apps/$app_name"
-          done
-        '';
 
       system.defaults = {
         dock.autohide = true;
@@ -109,13 +92,20 @@
     darwinConfigurations."pro" = nix-darwin.lib.darwinSystem {
       modules = [ 
         configuration
+	home-manager.darwinModules.home-manager
+        {
+          # `home-manager` config
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.josh = import ./home.nix;
+        }
 	nix-homebrew.darwinModules.nix-homebrew {
 	  nix-homebrew = {
 	    enable = true;
 	    enableRosetta = true;
 	    user = "josh";
 	  };
-	}
+	}	
       ];
     };
 
