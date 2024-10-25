@@ -8,7 +8,7 @@
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, ... }:
   let
     configuration = { pkgs, config, ... }: {
       # List packages installed in system profile. To search by name, run:
@@ -16,8 +16,6 @@
       nixpkgs.config.allowUnfree = true;
       environment.systemPackages =
         [ 
-	  pkgs.coreutils
-	  pkgs.fd
 	  pkgs.git
 	  pkgs.kitty
 	  pkgs.lazygit
@@ -38,6 +36,7 @@
 	  "arc"
 	  "cursor"
 	  "discord"
+	  "figma"
 	  "obsidian"
 	  "visual-studio-code"
 	];
