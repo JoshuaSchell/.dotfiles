@@ -11,6 +11,7 @@ in
   xdg.enable = true;
 
   programs = {
+    fzf = import ../home/fzf.nix {inherit pkgs;};
     oh-my-posh = import ../home/oh-my-posh.nix {inherit pkgs;};
   };
 
