@@ -18,6 +18,7 @@
       nixpkgs.config.allowUnfree = true;
       environment.systemPackages =
         [ 
+	  pkgs.gcc
 	  pkgs.git
 	  pkgs.kitty
 	  pkgs.lazygit
@@ -38,12 +39,14 @@
 	casks = [
 	  "android-studio"
 	  "arc"
+	  "brave-browser"
 	  "cursor"
 	  "discord"
 	  "figma"
 	  "obsidian"
 	  "visual-studio-code"
 	  "wezterm"
+	  "zen-browser"
 	];
 	masApps = {
           "UTM" = 1538878817;
