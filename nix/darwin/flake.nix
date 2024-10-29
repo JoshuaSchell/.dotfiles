@@ -22,7 +22,6 @@
 	  pkgs.git
 	  pkgs.kitty
 	  pkgs.lazygit
-	  pkgs.mkalias
 	  pkgs.neovim
 	  pkgs.ripgrep
 	  pkgs.zoxide
@@ -55,10 +54,6 @@
 	onActivation.autoUpdate = true;
 	onActivation.upgrade = true;
       };
-
-      fonts.packages = [
-        (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-      ];
 
       system.defaults = {
         dock.autohide = true;
