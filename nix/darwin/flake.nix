@@ -5,22 +5,20 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
-    nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
     home-manager.url = "github:nix-community/home-manager/release-24.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, home-manager, ... }:
+  outputs = { self, nix-darwin, nixpkgs, home-manager, ... }@inputs:
   let
+    username = "josh";
     configuration = { pkgs, config, ... }: {
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       nixpkgs.config.allowUnfree = true;
       environment.systemPackages =
-        [ 
-	  pkgs.gcc
+        [
 	  pkgs.git
-	  pkgs.kitty
 	  pkgs.lazygit
 	  pkgs.neovim
 	  pkgs.ripgrep
@@ -28,13 +26,13 @@
         ];
 
       users.users.josh = {
-        name = "josh";
-	home = "/Users/josh";
+        name = username;
+        home = "/Users/josh";
       };
 
       homebrew = {
         enable = true;
-	brews = [];
+      brews = [];
 	casks = [
 	  "android-studio"
 	  "arc"
@@ -43,8 +41,10 @@
 	  "discord"
 	  "figma"
 	  "obsidian"
+	  "raycast"
 	  "visual-studio-code"
 	  "wezterm"
+	  "zed"
 	  "zen-browser"
 	];
 	masApps = {
@@ -88,7 +88,7 @@
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#pro
     darwinConfigurations."pro" = nix-darwin.lib.darwinSystem {
-      modules = [ 
+      modules = [
         configuration
 	home-manager.darwinModules.home-manager
         {
@@ -97,13 +97,6 @@
           home-manager.useUserPackages = true;
           home-manager.users.josh = import ./home.nix;
         }
-	nix-homebrew.darwinModules.nix-homebrew {
-	  nix-homebrew = {
-	    enable = true;
-	    enableRosetta = true;
-	    user = "josh";
-	  };
-	}	
       ];
     };
 
