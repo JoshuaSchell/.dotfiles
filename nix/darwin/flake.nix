@@ -40,6 +40,7 @@
 	      "cursor"
 	      "discord"
 	      "figma"
+		  "font-jetbrains-mono-nerd-font"
 	      "obsidian"
 	      "raycast"
 	      "visual-studio-code"
