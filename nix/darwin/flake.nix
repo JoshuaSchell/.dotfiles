@@ -17,13 +17,13 @@
       # $ nix-env -qaP | grep wget
       nixpkgs.config.allowUnfree = true;
       environment.systemPackages =
-        [
-	  pkgs.git
-	  pkgs.lazygit
-	  pkgs.neovim
-	  pkgs.ripgrep
-	  pkgs.zoxide
-        ];
+      [
+	    pkgs.git
+	    pkgs.lazygit
+	    pkgs.neovim
+	    pkgs.ripgrep
+	    pkgs.zoxide
+      ];
 
       users.users.josh = {
         name = username;
@@ -32,34 +32,34 @@
 
       homebrew = {
         enable = true;
-      brews = [];
-	casks = [
-	  "android-studio"
-	  "arc"
-	  "brave-browser"
-	  "cursor"
-	  "discord"
-	  "figma"
-	  "obsidian"
-	  "raycast"
-	  "visual-studio-code"
-	  "wezterm"
-	  "zed"
-	  "zen-browser"
-	];
-	masApps = {
+        brews = [];
+        casks = [
+	      "android-studio"
+	      "arc"
+	      "brave-browser"
+	      "cursor"
+	      "discord"
+	      "figma"
+	      "obsidian"
+	      "raycast"
+	      "visual-studio-code"
+	      "wezterm"
+	      "zed"
+	      "zen-browser"
+	    ];
+	    masApps = {
           "UTM" = 1538878817;
-	};
-	onActivation.cleanup = "zap";
-	onActivation.autoUpdate = true;
-	onActivation.upgrade = true;
+	    };
+	    onActivation.cleanup = "zap";
+	    onActivation.autoUpdate = true;
+	    onActivation.upgrade = true;
       };
 
       system.defaults = {
         dock.autohide = true;
-	finder.FXPreferredViewStyle = "clmv";
-	loginwindow.GuestEnabled = false;
-	NSGlobalDomain.AppleInterfaceStyle = "Dark";
+	    finder.FXPreferredViewStyle = "clmv";
+	    loginwindow.GuestEnabled = false;
+	    NSGlobalDomain.AppleInterfaceStyle = "Dark";
       };
 
       # Auto upgrade nix package and the daemon service.
@@ -90,7 +90,7 @@
     darwinConfigurations."pro" = nix-darwin.lib.darwinSystem {
       modules = [
         configuration
-	home-manager.darwinModules.home-manager
+	    home-manager.darwinModules.home-manager
         {
           # `home-manager` config
           home-manager.useGlobalPkgs = true;
