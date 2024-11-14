@@ -18,8 +18,10 @@
       nixpkgs.config.allowUnfree = true;
       environment.systemPackages =
       [
+        pkgs.gcc-arm-embedded
 	    pkgs.git
 	    pkgs.lazygit
+		pkgs.llvm # test
 	    pkgs.neovim
 	    pkgs.ripgrep
 	    pkgs.zoxide
@@ -34,7 +36,7 @@
         enable = true;
         brews = [];
         casks = [
-	      "android-studio"
+          "android-studio"
 	      "arc"
 	      "brave-browser"
 	      "cursor"
