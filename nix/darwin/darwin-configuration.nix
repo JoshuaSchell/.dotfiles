@@ -10,6 +10,7 @@
     gh
     git
     lazygit
+    lua-language-server
     neovim
     nil
     nixd
