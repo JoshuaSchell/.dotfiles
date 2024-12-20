@@ -7,9 +7,10 @@
     eza
     fastfetch
     fzf
-    git
     gh
+    git
     lazygit
+    neovim
     nil
     nixd
     nixfmt-rfc-style
