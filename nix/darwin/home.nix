@@ -9,8 +9,9 @@
     ".gitignore".source = ./../../.gitignore;
     ".wezterm.lua".source = ./../../.wezterm.lua;
     ".zshrc".source = ./../../.zshrc;
-    ".config/ohmyposh/ohmyposh.toml".source = ./../../.config/ohmyposh/ohmyposh.toml;
-    ".config/tmux/tmux.conf".source = ./../../.config/tmux/tmux.conf;
+    ".config/nvim".source = ./../../.config/nvim;
+    ".config/ohmyposh".source = ./../../.config/ohmyposh;
+    ".config/tmux".source = ./../../.config/tmux;
   };
   home.sessionVariables = {
     EDITOR = "Neovim";
