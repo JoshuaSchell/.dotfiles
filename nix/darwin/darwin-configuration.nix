@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     alejandra
     bat
+    cmake
     eza
     fastfetch
     fzf
