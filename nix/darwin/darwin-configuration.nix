@@ -10,6 +10,7 @@
     fzf
     gh
     git
+    gopls
     lazygit
     lua-language-server
     neovim
