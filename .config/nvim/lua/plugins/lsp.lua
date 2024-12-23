@@ -19,7 +19,21 @@ return {
       require("lspconfig").gopls.setup { capabilities = capabilities }
       require("lspconfig").lua_ls.setup { capabilities = capabilities }
       require("lspconfig").nil_ls.setup { capabilities = capabilities }
-      require("lspconfig").pyright.setup { capabilities = capabilities }
+      require("lspconfig").pyright.setup {
+        capabilities = capabilities,
+        settings = {
+          pyright = {
+            -- Using Ruff's import organizer
+            disableOrganizeImports = true,
+          },
+          python = {
+            analysis = {
+              -- Ignore all files for analysis to exclusively use Ruff for linting
+              ignore = { '*' },
+            },
+          },
+        },
+      }
       require("lspconfig").ruff.setup { capabilities = capabilities }
 
       vim.api.nvim_create_autocmd('LspAttach', {
