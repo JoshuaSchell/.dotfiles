@@ -8,7 +8,6 @@
     eza
     fastfetch
     fzf
-    gdb
     gh
     git
     gopls
