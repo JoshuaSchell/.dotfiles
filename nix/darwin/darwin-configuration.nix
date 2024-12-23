@@ -21,6 +21,7 @@
     pyright
     postgresql
     ripgrep
+    ruff
     wget
     zoxide
   ];
