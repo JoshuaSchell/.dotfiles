@@ -19,5 +19,10 @@ return {
         cwd = "~/.dotfiles/.config/nvim/"
       }
     end)
+    vim.keymap.set("n", "<space>ec", function()
+      require('telescope.builtin').find_files {
+        cwd = "~/Code/"
+      }
+    end)
   end,
 }
