@@ -9,6 +9,7 @@
       "discord"
       "figma"
       "font-jetbrains-mono"
+      "ghostty"
       "miniconda"
       "obsidian"
       "raycast"
