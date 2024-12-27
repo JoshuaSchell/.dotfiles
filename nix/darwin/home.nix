@@ -9,6 +9,7 @@
     ".gitignore".source = ./../../.gitignore;
     ".wezterm.lua".source = ./../../.wezterm.lua;
     ".zshrc".source = ./../../.zshrc;
+    ".config/ghostty".source = ./../../.config/ghostty;
     ".config/nvim".source = ./../../.config/nvim;
     ".config/ohmyposh".source = ./../../.config/ohmyposh;
     ".config/tmux".source = ./../../.config/tmux;
