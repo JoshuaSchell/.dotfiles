@@ -22,6 +22,8 @@
     postgresql
     ripgrep
     ruff
+    texlab
+    texliveFull
     wget
     zoxide
   ];
