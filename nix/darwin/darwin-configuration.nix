@@ -7,6 +7,7 @@
     cmake
     eza
     fastfetch
+    fd
     fzf
     gh
     git
@@ -15,7 +16,6 @@
     lua-language-server
     neovim
     nil
-    nixd
     nixfmt-rfc-style
     oh-my-posh
     pyright
