@@ -13,6 +13,7 @@
       "miniconda"
       "obsidian"
       "raycast"
+      "skim"
       "wezterm"
       "wireshark"
       "zed"
