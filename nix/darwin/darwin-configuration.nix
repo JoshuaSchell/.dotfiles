@@ -25,6 +25,7 @@
     texlab
     texliveFull
     wget
+    zig
     zls
     zoxide
   ];
