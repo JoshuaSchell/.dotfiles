@@ -11,6 +11,7 @@
     fzf
     gh
     git
+    go
     gopls
     lazygit
     lua-language-server
