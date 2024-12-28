@@ -36,7 +36,7 @@ return {
         },
       }
       require("lspconfig").ruff.setup { capabilities = capabilities }
-      require 'lspconfig'.texlab.setup { capabilities = capabilities }
+      require("lspconfig").texlab.setup { capabilities = capabilities }
 
       vim.api.nvim_create_autocmd('LspAttach', {
         callback = function(args)
