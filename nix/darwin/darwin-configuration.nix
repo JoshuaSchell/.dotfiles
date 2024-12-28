@@ -25,6 +25,7 @@
     texlab
     texliveFull
     wget
+    zls
     zoxide
   ];
   system.defaults = {
