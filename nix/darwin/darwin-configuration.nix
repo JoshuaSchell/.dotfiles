@@ -37,6 +37,7 @@
       "/System/Applications/Messages.app"
       "/System/Applications/Mail.app"
       "/System/Applications/Calendar.app"
+      "/Applications/Ghostty.app/"
       "/Applications/WezTerm.app"
       "/Applications/Brave Browser.app"
       "/Applications/Zen Browser.app"
