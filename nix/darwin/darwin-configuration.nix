@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     alejandra
     bat
+    btop
     cmake
     eza
     fastfetch
@@ -17,7 +18,6 @@
     lua-language-server
     neovim
     nil
-    nixfmt-rfc-style
     oh-my-posh
     pyright
     postgresql
@@ -25,6 +25,7 @@
     ruff
     texlab
     texliveFull
+    tmux
     wget
     zig
     zls
