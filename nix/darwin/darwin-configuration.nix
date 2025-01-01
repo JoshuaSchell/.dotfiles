@@ -23,6 +23,7 @@
     postgresql
     ripgrep
     ruff
+    rustup
     texlab
     texliveFull
     tmux
