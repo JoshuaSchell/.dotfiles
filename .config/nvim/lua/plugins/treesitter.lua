@@ -4,7 +4,7 @@ return {
     build = ":TSUpdate",
     config = function()
       require 'nvim-treesitter.configs'.setup {
-        ensure_installed = { "c", "cpp", "lua", "go", "python", "zig", "nix", "cuda", "vim", "vimdoc", "query", "markdown", "markdown_inline" },
+        ensure_installed = { "c", "cpp", "lua", "go", "python", "zig", "rust", "nix", "cuda", "vim", "vimdoc", "query", "markdown", "markdown_inline" },
         auto_install = false,
         highlight = {
           enable = true,
