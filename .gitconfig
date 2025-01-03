@@ -1,7 +1,7 @@
 [init]
-	defaultBranch = main
+  defaultBranch = main
 [user]
-	name = Josh Schell
-	email = josh@schell.me
-
-
+  name = Josh Schell
+  email = josh@schell.me
+[core]
+  excludesfile = ~/.gitignore
