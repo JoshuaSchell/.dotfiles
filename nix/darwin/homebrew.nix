@@ -6,6 +6,7 @@
     taps = [ ];
     casks = [
       "brave-browser"
+      "docker"
       "discord"
       "figma"
       "font-jetbrains-mono"
