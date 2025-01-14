@@ -6,6 +6,7 @@
     bat
     btop
     cmake
+    docker
     eza
     fastfetch
     fd
