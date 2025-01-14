@@ -14,6 +14,7 @@
     git
     go
     gopls
+    lazydocker
     lazygit
     lua-language-server
     neovim
