@@ -1,12 +1,7 @@
 return {
-  "navarasu/onedark.nvim",
+  'f4z3r/gruvbox-material.nvim',
+  name = 'gruvbox-material',
+  lazy = false,
   priority = 1000,
-  config = function()
-    require('onedark').setup {
-      style = 'dark',
-      transparent = true,
-      term_colors = true
-    }
-    require('onedark').load()
-  end
+  opts = {},
 }
