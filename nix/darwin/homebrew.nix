@@ -7,6 +7,7 @@
     casks = [
       "brave-browser"
       "docker"
+      "cursor"
       "discord"
       "figma"
       "font-jetbrains-mono"
