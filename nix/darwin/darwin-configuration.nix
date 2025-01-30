@@ -16,6 +16,9 @@
     gopls
     lazydocker
     lazygit
+    llvmPackages_18.llvm
+    llvmPackages_18.clang
+    llvmPackages_18.openmp
     lua-language-server
     neovim
     nil

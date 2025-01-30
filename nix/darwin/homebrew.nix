@@ -15,6 +15,7 @@
       "miniconda"
       "obsidian"
       "raycast"
+      "rider"
       "skim"
       "wezterm"
       "wireshark"
