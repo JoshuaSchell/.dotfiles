@@ -5,3 +5,5 @@
   email = josh@schell.me
 [core]
   excludesfile = ~/.gitignore
+[pull]
+	rebase = true
