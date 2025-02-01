@@ -2,13 +2,16 @@
 {
   homebrew = {
     enable = true;
-    brews = [ ];
+    brews = [
+      "dotnet"
+    ];
     taps = [ ];
     casks = [
+      "android-studio"
       "brave-browser"
-      "docker"
       "cursor"
       "discord"
+      "docker"
       "figma"
       "font-jetbrains-mono"
       "ghostty"
