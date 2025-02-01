@@ -8,6 +8,7 @@
       "android-studio"
       "brave-browser"
       "cursor"
+      "dotnet-sdk"
       "discord"
       "docker"
       "figma"
