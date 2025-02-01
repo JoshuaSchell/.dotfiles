@@ -2,9 +2,7 @@
 {
   homebrew = {
     enable = true;
-    brews = [
-      "dotnet"
-    ];
+    brews = [ ];
     taps = [ ];
     casks = [
       "android-studio"

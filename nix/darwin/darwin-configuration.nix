@@ -6,6 +6,7 @@
     bat
     btop
     cmake
+    dotnet-sdk_9
     eza
     fastfetch
     fd
