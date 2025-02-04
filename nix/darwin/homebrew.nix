@@ -14,6 +14,7 @@
       "figma"
       "font-jetbrains-mono"
       "ghostty"
+      "jupyterlab"
       "miniconda"
       "obsidian"
       "raycast"
