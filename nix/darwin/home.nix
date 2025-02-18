@@ -12,6 +12,7 @@
     ".config/ghostty".source = ./../../.config/ghostty;
     ".config/nvim".source = ./../../.config/nvim;
     ".config/ohmyposh".source = ./../../.config/ohmyposh;
+    ".config/helix".source = ./../../.config/helix;
     ".config/tmux".source = ./../../.config/tmux;
   };
   home.sessionVariables = {
