@@ -14,6 +14,7 @@
     git
     go
     gopls
+    helix
     lazydocker
     lazygit
     llvmPackages_18.llvm

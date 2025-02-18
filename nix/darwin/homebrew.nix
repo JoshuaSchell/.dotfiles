@@ -2,7 +2,9 @@
 {
   homebrew = {
     enable = true;
-    brews = [ ];
+    brews = [ 
+      "jupyterlab"
+    ];
     taps = [ ];
     casks = [
       "android-studio"
@@ -14,7 +16,7 @@
       "figma"
       "font-jetbrains-mono"
       "ghostty"
-      "jupyterlab"
+      "jupyter-notebook-ql"
       "miniconda"
       "obsidian"
       "raycast"
