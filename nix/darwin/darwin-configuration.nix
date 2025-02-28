@@ -17,20 +17,14 @@
     helix
     lazydocker
     lazygit
-    llvmPackages_18.llvm
-    llvmPackages_18.clang
-    llvmPackages_18.openmp
     lua-language-server
     neovim
     nil
     oh-my-posh
     pyright
-    postgresql
     ripgrep
     ruff
     rustup
-    texlab
-    texliveFull
     tmux
     wget
     zig
@@ -44,7 +38,7 @@
       "/System/Applications/Messages.app"
       "/System/Applications/Mail.app"
       "/System/Applications/Calendar.app"
-      "/Applications/Ghostty.app/"
+      "/Applications/Ghostty.app"
       "/Applications/WezTerm.app"
       "/Applications/Brave Browser.app"
       "/Applications/Zen Browser.app"

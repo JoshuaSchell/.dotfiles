@@ -2,12 +2,9 @@
 {
   homebrew = {
     enable = true;
-    brews = [ 
-      "jupyterlab"
-    ];
+    brews = [ ];
     taps = [ ];
     casks = [
-      "android-studio"
       "brave-browser"
       "cursor"
       "dotnet-sdk"
@@ -16,12 +13,9 @@
       "figma"
       "font-jetbrains-mono"
       "ghostty"
-      "jupyter-notebook-ql"
-      "miniconda"
       "obsidian"
       "raycast"
       "rider"
-      "skim"
       "wezterm"
       "wireshark"
       "zed"
