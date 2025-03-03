@@ -41,7 +41,7 @@
       "/Applications/Ghostty.app"
       "/Applications/WezTerm.app"
       "/Applications/Brave Browser.app"
-      "/Applications/Zen Browser.app"
+      "/Applications/Zen.app"
       "/Applications/Zed.app"
       "/Applications/Obsidian.app"
       "/Applications/Discord.app"

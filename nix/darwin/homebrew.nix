@@ -16,6 +16,7 @@
       "obsidian"
       "raycast"
       "rider"
+      "visual-studio-code"
       "wezterm"
       "wireshark"
       "zed"
