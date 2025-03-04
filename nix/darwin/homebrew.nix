@@ -2,7 +2,9 @@
 {
   homebrew = {
     enable = true;
-    brews = [ ];
+    brews = [
+      "typst"
+    ];
     taps = [ ];
     casks = [
       "brave-browser"
@@ -16,7 +18,6 @@
       "obsidian"
       "raycast"
       "rider"
-      "typst"
       "visual-studio-code"
       "wezterm"
       "wireshark"
