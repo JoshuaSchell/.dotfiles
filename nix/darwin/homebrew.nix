@@ -7,8 +7,8 @@
     casks = [
       "brave-browser"
       "cursor"
-      "dotnet-sdk"
       "discord"
+      "dotnet-sdk"
       "docker"
       "figma"
       "font-jetbrains-mono"
@@ -16,6 +16,7 @@
       "obsidian"
       "raycast"
       "rider"
+      "typst"
       "visual-studio-code"
       "wezterm"
       "wireshark"
