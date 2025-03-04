@@ -2,9 +2,7 @@
 {
   homebrew = {
     enable = true;
-    brews = [
-      "typst"
-    ];
+    brews = [ ];
     taps = [ ];
     casks = [
       "brave-browser"
