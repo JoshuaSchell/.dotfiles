@@ -15,6 +15,7 @@
     go
     gopls
     helix
+    jupyter
     lazydocker
     lazygit
     lua-language-server

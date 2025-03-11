@@ -5,6 +5,7 @@
     brews = [ ];
     taps = [ ];
     casks = [
+      "anaconda"
       "brave-browser"
       "cursor"
       "discord"
