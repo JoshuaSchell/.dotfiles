@@ -2,7 +2,7 @@ theme = "gruvbox"
 
 [editor]
 line-number = "relative"
-auto-format = "true"
+auto-format = true
 
 [editor.cursor-shape]
 insert = "bar"
