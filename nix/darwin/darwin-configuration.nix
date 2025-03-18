@@ -28,6 +28,7 @@
     rustup
     tmux
     wget
+    yazi
     zig
     zls
     zoxide
