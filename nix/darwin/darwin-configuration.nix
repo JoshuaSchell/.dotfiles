@@ -12,12 +12,14 @@
     fzf
     gh
     git
+    git-lfs
     go
     gopls
     helix
     jupyter
     lazydocker
     lazygit
+    lldb
     lua-language-server
     neovim
     nil
