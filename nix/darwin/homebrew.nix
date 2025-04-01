@@ -22,6 +22,7 @@
       "wireshark"
       "zed"
       "zen-browser"
+      "zoom"
     ];
     masApps = { };
     onActivation.cleanup = "zap";

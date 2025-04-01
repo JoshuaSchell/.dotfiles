@@ -24,6 +24,7 @@
     neovim
     nil
     oh-my-posh
+    postgresql
     pyright
     ripgrep
     ruff
