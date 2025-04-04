@@ -29,6 +29,7 @@
     ripgrep
     ruff
     rustup
+    tinymist
     tmux
     wget
     yazi
