@@ -8,7 +8,7 @@ config = {
   window_close_confirmation = "NeverPrompt",
   window_decorations = "RESIZE",
   default_cursor_style = "SteadyBar",
-  color_scheme = 'Gruvbox dark, medium (base16)',
+  color_scheme = 'Gruvbox dark, soft (base16)',
   font_size = 16,
 }
 
