@@ -31,6 +31,7 @@
     rustup
     tinymist
     tmux
+    typst
     wget
     yazi
     zig
