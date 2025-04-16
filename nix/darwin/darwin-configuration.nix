@@ -12,7 +12,6 @@
     fzf
     gh
     git
-    git-lfs
     go
     gopls
     helix
