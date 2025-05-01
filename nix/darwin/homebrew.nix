@@ -7,13 +7,10 @@
     casks = [
       "brave-browser"
       "cursor"
-      "discord"
-      "dotnet-sdk"
       "docker"
       "font-jetbrains-mono"
       "ghostty"
       "obsidian"
-      "raspberry-pi-imager"
       "raycast"
       "rider"
       "vesktop"

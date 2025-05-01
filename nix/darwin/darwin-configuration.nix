@@ -50,7 +50,7 @@
       "/Applications/Zen.app"
       "/Applications/Zed.app"
       "/Applications/Obsidian.app"
-      "/Applications/Discord.app"
+      "/Applications/Vesktop.app"
     ];
     dock.show-recents = false;
     finder.FXPreferredViewStyle = "clmv";

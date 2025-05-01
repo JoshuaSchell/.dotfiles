@@ -66,5 +66,3 @@ alias lg='lazygit'
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
-export PATH="/usr/local/opt/llvm/bin:$PATH"
-export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
