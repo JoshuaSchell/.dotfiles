@@ -37,6 +37,7 @@
     zls
     zoxide
   ];
+  system.primaryUser = "josh";
   system.defaults = {
     dock.autohide = true;
     dock.persistent-apps = [
@@ -55,7 +56,6 @@
     dock.show-recents = false;
     finder.FXPreferredViewStyle = "clmv";
     loginwindow.GuestEnabled = false;
-    NSGlobalDomain.AppleInterfaceStyle = "Dark";
-    NSGlobalDomain.KeyRepeat = 2;
+
   };
 }

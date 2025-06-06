@@ -8,6 +8,7 @@
       "brave-browser"
       "cursor"
       "docker"
+      "dotnet-sdk"
       "font-jetbrains-mono"
       "ghostty"
       "obsidian"
@@ -17,7 +18,7 @@
       "visual-studio-code"
       "wezterm"
       "zed"
-      "zen-browser"
+      "zen"
       "zoom"
     ];
     masApps = { };
